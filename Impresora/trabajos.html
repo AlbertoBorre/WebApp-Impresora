@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Impresora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="trabajos.html">Trabajos</a></li>
+            <li><a href="sistema.html">Sistema</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="contenedorTabla">
+            <h2>Trabajos de la Impresora</h2>
+            <button class="btnAgregar">Imprimir trabajo</button>
+    
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Trabajo</th>
+                        <th>Usuario</th>
+                        <th>Páginas</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Documento.pdf</td>
+                        <td>alberto@prueba.com</td>
+                        <td>5</td>
+                        <td>Imprimiendo</td>
+                        <td class="acciones">
+                            <button class="btnTabla btnEditarParar">Parar</button>
+                            <button class="btnTabla btnEliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Documento.pdf</td>
+                        <td>alberto@prueba.com</td>
+                        <td>10</td>
+                        <td>En cola</td>
+                        <td class="acciones">
+                            <button class="btnTabla btnEditarParar">Parar</button>
+                            <button class="btnTabla btnEliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Documento.pdf</td>
+                        <td>alberto@prueba.com</td>
+                        <td>10</td>
+                        <td>En cola</td>
+                        <td class="acciones">
+                            <button class="btnTabla btnEditarParar">Parar</button>
+                            <button class="btnTabla btnEliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Documento.pdf</td>
+                        <td>alberto@prueba.com</td>
+                        <td>10</td>
+                        <td>En cola</td>
+                        <td class="acciones">
+                            <button class="btnTabla btnEditarParar">Parar</button>
+                            <button class="btnTabla btnEliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Documento.pdf</td>
+                        <td>alberto@prueba.com</td>
+                        <td>5</td>
+                        <td>En pausa</td>
+                        <td class="acciones">
+                            <button class="btnTabla btnEditarParar">Reanudar</button>
+                            <button class="btnTabla btnEliminar">Cancelar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="paginacionCaja">
+                <ul class="paginacion">
+                    <li class="activo"><a>1</a></li>
+                    <li><a>2</a></li>
+                    <li><a>3</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

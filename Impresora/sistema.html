@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Impresora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="trabajos.html">Trabajos</a></li>
+            <li><a href="sistema.html">Sistema</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="mainSistema">
+            <div class="seccion">
+                <h2 class="borde">Estatus</h2>
+                <div class="tarjeta">
+                    <label>Nombre de la Impresora:</label>
+                    <input type="text" name="nombreImpresora" class="nombreImpresora" value="Impresora P1">
+                    <p>Número de Serie: <span id="numSerie">000000000000</span></p>
+                    <button class="botonIcono ancho"><i class="fas fa-book"></i>Guía de Usuario</button>
+                    <button class="botonIcono ancho"><i class="fas fa-sync-alt"></i>Reiniciar</button>
+                    <button class="botonIcono ancho"><i class="fas fa-power-off"></i>Apagar</button>
+                </div>
+            </div>
+            <div class="seccion">
+                <h2 class="borde">Opciones del Usuario</h2>
+                <div class="tarjeta">
+                    <p>Usuario: <span id="nombreUsuario">admin</span></p>
+                    <button class="botonIcono ancho"><i class="fas fa-key"></i>Cambiar Contraseña</button>
+                </div>
+            </div>
+            <div class="seccion">
+                <h2 class="borde">Opciones de la Impresora</h2>
+                <div class="cajaGrid">
+                    <button class="botonIcono"><i class="fas fa-network-wired"></i>IP de la Impresora</button>
+                    <button class="botonIcono"><i class="fas fa-plug"></i>Puerto de Impresora</button>
+                    <button class="botonIcono"><i class="fas fa-redo"></i>Reseteo de Fábrica</button>
+                    <button class="botonIcono"><i class="fas fa-download"></i>Actualizar</button>
+                    <button class="botonIcono"><i class="fas fa-wifi"></i>Conectividad</button>
+                    <button class="botonIcono"><i class="fas fa-language"></i>Idioma</button>
+                    <button class="botonIcono"><i class="fas fa-print"></i>Impresión</button>
+                    <button class="botonIcono"><i class="fas fa-info-circle"></i>Información</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

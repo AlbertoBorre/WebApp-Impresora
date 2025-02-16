@@ -1,0 +1,363 @@
+body {
+    font-family: Verdana, Arial;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+}
+
+:root {
+    --azul: rgb(0, 167, 223);
+    --azul-hover: rgb(0, 147, 196);
+    --sombra: rgba(0, 0, 0, 0.2);
+}
+
+/* INDEX */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    background-color: #3b3b3b;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1.4rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    flex: 1;
+    padding: 1rem 2rem;
+    overflow-y: auto;
+    background-color: #f3f3f3;
+}
+
+section {
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.fila-estado {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fila-estado > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.fila-estado > div p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.fila-consumibles {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.toner {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: .3rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.k {
+    background: linear-gradient(to top, black 20%, white 20%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px var(--sombra);
+}
+
+.c {
+    background: linear-gradient(to top, cyan 80%, white 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px rgba(0, 255, 255, 0.2);
+}
+
+.m {
+    background: linear-gradient(to top, magenta 70%, white 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px rgba(255, 0, 255, 0.2);
+}
+
+.y {
+    background: linear-gradient(to top, yellow 70%, white 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px rgba(255, 255, 0, 0.2);
+}
+
+.porcentaje {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.notificacion {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: .1rem .8rem;
+    margin-bottom: .5rem;
+    box-shadow: 4px 4px 8px var(--sombra);
+}
+
+.notificacion-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.notificacion-text, .notificacion-hora {
+    font-weight: 600;
+}
+
+.notificacion-descripcion {
+    font-size: .9rem;
+}
+
+/* CONTACTOS Y TRABAJOS */
+.contenedorTabla {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px var(--sombra);
+    padding: 1.5rem;
+}
+
+.btnAgregar {
+    display: block;
+    width: auto;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--azul);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+.btnAgregar:hover {
+    background-color: var(--azul-hover);
+}
+
+.tabla {
+    margin-top: 1rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla th, .tabla td {
+    padding: 1rem;
+}
+
+.tabla th {
+    background-color: rgb(0, 113, 158);
+    color: white;
+}
+
+.tabla tr:hover {
+    background-color: #eee;
+}
+
+tr td:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.btnTabla {
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btnEditarParar {
+    background-color: var(--azul);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+.btnEditarParar:hover {
+    background-color: var(--azul-hover);
+}
+
+.btnEliminar {
+    background-color: rgb(255, 88, 88);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+.btnEliminar:hover {
+    background-color: rgb(255, 33, 33);
+}
+
+.paginacionCaja {
+    margin-top: .2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.paginacion {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.paginacion a {
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    background-color: #eee;
+    color: black;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+.paginacion a:hover {
+    background-color: var(--azul-hover);
+    color: white;
+}
+
+.paginacion .activo a {
+    background-color: var(--azul-hover);
+    color: white;
+}
+
+/* SISTEMA */
+.mainSistema {
+    display: flex;
+    gap: 20px;
+}
+
+.seccion {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px var(--sombra);
+}
+
+.borde {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btnSistema {
+    background-color: var(--azul);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+    color: white;
+}
+
+.btnSistema:hover {
+    background-color: var(--azul-hover);
+}
+
+.nombreImpresora {
+    width: 100%;
+    max-width: 180px;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.cajaGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.botonIcono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--azul);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    height: 100px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.botonIcono i {
+    font-size: 1.5rem;
+}
+
+.ancho {
+    width: 50%;
+}
+
+.botonIcono:hover {
+    background-color: var(--azul-hover);
+}
